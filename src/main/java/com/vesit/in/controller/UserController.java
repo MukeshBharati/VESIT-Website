@@ -103,6 +103,10 @@ public class UserController {
 	public String outdoorreg(Map<String,Object> map,@ModelAttribute User user) {
 		System.out.println(user);
 		user.setCategory("outdoor");
+		
+		User registeredUser = userService.getUserByCategoryDEpartmentAndGame(user.getCategory(), user.getDepartment(), user.getGame());
+		System.out.println(registeredUser+"after registered user");
+		if(registeredUser==null) {
 		User savedUser = userService.saveUser(user);
 		System.out.println(savedUser);
 		if(savedUser!=null) {
@@ -111,7 +115,11 @@ public class UserController {
 			return "trial";
 		}
 		map.put("savedStatus", "Registration Failed");
-		return "redirect:/user/index";
+		return "index";
+	}else {
+		map.put("savedStatus", "Already registered");
+		return "index";
+		}
 	}
 	
 	

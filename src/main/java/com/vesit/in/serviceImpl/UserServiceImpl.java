@@ -19,4 +19,9 @@ public class UserServiceImpl implements IUserService {
 		return repo.save(user);
 	}
 
+	@Override
+	public User getUserByCategoryDEpartmentAndGame(String category, String department, String game) {
+		return repo.findByCategoryAndDepartmentAndGame(category, department, game);
+	}
+
 }
