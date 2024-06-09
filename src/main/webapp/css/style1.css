@@ -1,0 +1,237 @@
+.dispheadermob {
+    width: 16rem;
+    }
+    
+    @media  only screen and (max-width: 600px) {
+    .topnavphone {
+        /*display: none;*/
+    }
+    
+    .dispheadermob {
+        width: 16rem;
+        padding: 5%;
+    }
+    }
+    .bta {
+            background-image: url("https://vesit.ves.ac.in/storage/resize-16821547711898197120ariia.jpg");
+            background-size: 100px;
+            background-size: contain;
+    
+            background-position: center;
+       }
+
+       .megamenu {
+        position: static;
+        overflow: hidden;
+    }
+   
+    
+    @media (max-width: 991px) {
+        .megamenu .dropdown-menu {
+            overflow: auto;
+            max-height: 85vh;
+            align-items: flex-start;
+        }
+    
+        ::-webkit-scrollbar {
+            width: 0px;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+    
+        .navbar-toggler-icon {
+            width: 25px;
+            height: 25px;
+        }
+    
+    }
+    
+    .megamenu .dropdown-menu {
+        background: none;
+        border: none;
+        width: 100%;
+    }
+    
+    .mycolor {
+        background-color: #163866;
+        color: whitesmoke;
+    }
+    
+    form {
+        margin-top: 5%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 1s;
+        width: 50px;
+        height: 50px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+    }
+    
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        ;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+    
+    .fa {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 42.5px;
+        height: 42.5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        font-size: 1.2em;
+        transition: all 1s;
+    }
+    
+    form:hover {
+        width: 300px;
+        cursor: pointer;
+    }
+    
+    form:hover input {
+        display: block;
+    }
+    
+    form:hover .fa {
+        background: #07051a;
+        color: white;
+    }
+    /* Hover effect added for Navbar */
+    .navbar-nav .nav-item.dropdown:hover .dropdown-menu,
+        .navbar-nav .nav-item.dropdown.show .dropdown-menu {
+            display: block;
+    
+        }
+    
+        #pills-tab .nav-item .active {
+            background-color: #204a84;
+            border-radius: 18px;
+            color: white;
+            }
+            
+            p {
+            color: #204184;
+            }
+            
+            .list {
+            color: #fff;
+            list-style: none;
+            padding-left: 0px;
+            }
+            
+            .list a {
+            color: #fff;
+            }
+            
+            .list a:hover {
+            list-style: none;
+            text-decoration: none;
+            }
+            
+            .list>h5 {
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+            }
+            
+            /* .list::first-line {
+                    color: rgba(255, 255, 255, 0.5);
+                } */
+            .list>li>a {
+            padding: 5px 0px 5px 5px;
+            }
+            
+            .list>li {
+            padding: 5px 0px 5px 0px;
+            }
+            
+            .list>h5 {
+            padding: 5px 0px 5px 5px;
+            }
+            
+            .list>li>a:hover {
+            
+            background-color: rgba(255, 255, 255, 0.5);
+            border-left: 5px solid white;
+            color: #204a84;
+            font-weight: bolder;
+            padding-left: 10px;
+            }
+            
+            .list ul {
+            display: none;
+            }
+            
+            .list li:hover ul {
+            display: block;
+            list-style: none;
+            text-decoration: none;
+            }
+            
+            .list li:hover ul li {
+            padding: 5px 0px 5px 5px;
+            }
+            
+            .list li:hover ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-left: 5px solid white;
+            color: #204a84;
+            font-weight: bolder;
+            padding-left: 15px;
+            }
+            
+            .left-navigation .sub-arrow:after {
+            content: '\203A';
+            font-size: 30px;
+            float: right;
+            margin-top: -10px;
+            margin-right: 20px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            }
+            
+            .left-navigation li:hover .sub-arrow:after {
+            content: '\2039'
+            }
+            
+            .overlaysh {
+            background: #e9e9e9;
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.6;
+            
+            }
+            
+            #loading-img {
+            background: url(http://preloaders.net/preloaders/360/Velocity.gif) center center no-repeat;
+            height: 100%;
+            z-index: 10;
+            } 
+            .navbar-nav ml-auto{
+                text-align: center;
+            }
