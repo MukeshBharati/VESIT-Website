@@ -249,7 +249,7 @@ background-size: cover; background-repeat: no-repeat;"></a></li>
             <p>Congratulations on your achievements! We'd love to hear more about them. Please fill out the form below:</p>
         </div>
 
-        <a href="../Views/submitachievements.html"><button id="openFormButton">Add Achievement</button></a>
+        <a href="${pageContext.request.contextPath}/user/Student_achieve"><button id="openFormButton">Add Achievement</button></a>
 
         
     </div>

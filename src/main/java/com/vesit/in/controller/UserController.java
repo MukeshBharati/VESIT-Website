@@ -99,6 +99,15 @@ public class UserController {
 		return "indooronline";
 	}
 	
+	@GetMapping("/Student_achieve")
+	public String studach(Map<String,Object> map) {
+		User user = new User();
+		System.out.println("Inside UserController index method");
+		map.put("user", user);
+		return "submitachievements";
+	}
+	
+	
 	@PostMapping("/outreg")
 	public String outdoorreg(Map<String,Object> map,@ModelAttribute User user) {
 		System.out.println(user);
@@ -122,6 +131,51 @@ public class UserController {
 		}
 	}
 	
+	@PostMapping("/inregoff")
+	public String indooroffline(Map<String,Object> map,@ModelAttribute User user) {
+		System.out.println(user);
+		user.setCategory("Indoor offline");
+		
+		User registeredUser = userService.getUserByCategoryDEpartmentAndGame(user.getCategory(), user.getDepartment(), user.getGame());
+		System.out.println(registeredUser+"after registered user");
+		if(registeredUser==null) {
+		User savedUser = userService.saveUser(user);
+		System.out.println(savedUser);
+		if(savedUser!=null) {
+			map.put("savedStatus", "Registered successfully");
+			//return "sports";
+			return "trial";
+		}
+		map.put("savedStatus", "Registration Failed");
+		return "index";
+	}else {
+		map.put("savedStatus", "Already registered");
+		return "index";
+		}
+	}
+	
+	@PostMapping("/inregon")
+	public String indooronline(Map<String,Object> map,@ModelAttribute User user) {
+		System.out.println(user);
+		user.setCategory("Indoor online");
+		
+		User registeredUser = userService.getUserByCategoryDEpartmentAndGame(user.getCategory(), user.getDepartment(), user.getGame());
+		System.out.println(registeredUser+"after registered user");
+		if(registeredUser==null) {
+		User savedUser = userService.saveUser(user);
+		System.out.println(savedUser);
+		if(savedUser!=null) {
+			map.put("savedStatus", "Registered successfully");
+			//return "sports";
+			return "trial";
+		}
+		map.put("savedStatus", "Registration Failed");
+		return "index";
+	}else {
+		map.put("savedStatus", "Already registered");
+		return "index";
+		}
+	}
 	
 
 }

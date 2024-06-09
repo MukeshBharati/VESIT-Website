@@ -31,7 +31,7 @@
 <body>
     <div class="container">
         <h1 class="text-center mb-4">Indoor Online Games Registration</h1>
-        <form action="/submit-form" method="post" onsubmit="return validateForm()">
+        <form action="${pageContext.request.contextPath}/user/inregon" method="post" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="fullName">Full Name</label>
                 <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Enter your full name" required>
