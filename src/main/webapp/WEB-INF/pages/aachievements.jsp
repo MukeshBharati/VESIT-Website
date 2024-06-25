@@ -261,6 +261,9 @@
                 </c:forEach>
             </tbody>
         </table>
+        
+               <a href="${pageContext.request.contextPath}/user/downloadReport"><button class="btn-download">Download Report</button></a>
+          
     </div>
     
     <!-- jQuery -->
