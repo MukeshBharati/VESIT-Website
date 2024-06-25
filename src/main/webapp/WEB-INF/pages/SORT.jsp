@@ -258,6 +258,7 @@ form:hover .fa {
             <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/">Home</a></li>
             <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="/admission/programme">About Us</a></li>
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/storage\Vivekanand Education Socitey.pdf">Contact us</a></li>
+        <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="${pageContext.request.contextPath}/user/adminLoginform">Admin Login</a></li>
         </ul>     
         
         
@@ -347,7 +348,7 @@ form:hover .fa {
 
                     <div class="row">
                         <div class="col-sm-2">
-                            <img src="../assets/images/image001.png" alt="" class="btn-block">
+                            <img src="${pageContext.request.contextPath}/Images/image001.png" alt="" class="btn-block">
                         </div>
 
                         <div class="col-sm-10">
@@ -531,13 +532,13 @@ form:hover .fa {
 
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <img class="img-fluid" src="../assets/images/isr4.jpg" alt="" height="410">
+                                        <img class="img-fluid" src="${pageContext.request.contextPath}/Images/isr4.jpg" alt="" height="410">
 
                                     </div>
 
 
                                     <div class="col-sm-6">
-                                        <img class="img-fluid" src="../assets/images/isr5.jpg" alt="" height="410">
+                                        <img class="img-fluid" src="${pageContext.request.contextPath}/Images/isr5.jpg" alt="" height="410">
 
                                     </div>
 
@@ -577,7 +578,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <img src="../assets/images/village_visit_image.png" alt="" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/village_visit_image.png" alt="" class="btn-block">
 
                                             </div>
 
@@ -667,7 +668,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <img src="../assets/images/image003.png" alt="" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/image003.png" alt="" class="btn-block">
                                                     <small>Poster of the ‘Remote Clothes Donation’</small>
                                             </div>
 
@@ -731,7 +732,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <img src="../assets/images/MEMBERS.jpg" alt="" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/MEMBERS.jpg" alt="" class="btn-block">
                                                     <small><b>SoRT members with the total donations received </b></small>
                                             </div>
 
@@ -750,20 +751,20 @@ form:hover .fa {
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-4">
-                                            <img src="../assets/images/SORT1.jpg" alt="" height="275px" class="btn-block">
+                                            <img src="${pageContext.request.contextPath}/Images/SORT1.jpg" alt="" height="275px" class="btn-block">
                                             </div>
                                             <div class="col-sm-4">
-                                            <img src="../assets/images/sort2.jpg" alt="" height="275px" class="btn-block">
+                                            <img src="${pageContext.request.contextPath}/Images/sort2.jpg" alt="" height="275px" class="btn-block">
                                             </div>
                                             <div class="col-sm-4">
-                                            <img src="../assets/images/sort3.jpg" alt="" height="275px" class="btn-block">
+                                            <img src="${pageContext.request.contextPath}/Images/sort3.jpg" alt="" height="275px" class="btn-block">
                                             </div>
                                         </div>
                                         <p style="text-align: center;"><b> Photographs with few faculties who donated in the 3 day long clothes donation drive</b></p>
 
                                         <div class="row">
                                             <div class="col-sm-4">
-                                            <img src="../assets/images/sort4.jpg" alt="" height="275px" class="btn-block">
+                                            <img src="${pageContext.request.contextPath}/Images/sort4.jpg" alt="" height="275px" class="btn-block">
                                             </div>
                                             <div class="col-sm-4">
                                             <p style="text-align: justify;">A total of 39 bags of clothes were collected and were donated to 2 organisations namely -</p>
@@ -773,7 +774,7 @@ form:hover .fa {
                                             </ol>
                                             </div>
                                             <div class="col-sm-4">
-                                            <img src="../assets/images/sort5.jpg" alt="" height="275px" class="btn-block">
+                                            <img src="${pageContext.request.contextPath}/Images/sort5.jpg" alt="" height="275px" class="btn-block">
                                             </div>
                                         </div>
                                         <p style="text-align: center;"> <b>The SoRT Council along with the General Secretary handing over the donation to one of the NGO - ASS</b></p>
@@ -821,11 +822,11 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <img src="../assets/images/sos1.jpg" alt="" height="390" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/sos1.jpg" alt="" height="390" class="btn-block">
 
                                             </div>
                                             <div class="col-sm-6">
-                                                <img src="../assets/images/sos2.jpg" alt="" height="390" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/sos2.jpg" alt="" height="390" class="btn-block">
 
                                             </div>
 
@@ -873,7 +874,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div style="margin-left:auto; margin-right:auto">
-                                                <img class="img-fluid" src="../assets/images/sos3.jpg" alt="" width="600" height="400">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/sos3.jpg" alt="" width="600" height="400">
 
                                             </div>
 
@@ -883,7 +884,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/sos12.jpg"alt=" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/sos12.jpg"alt=" height="410">
                                                  <p style="text-align: center;">
                                                  <b>Vivek Gurav interacting with the hosts of SOS - Diya Shah &amp; Aditi Mishra</b>
 
@@ -892,7 +893,7 @@ form:hover .fa {
 
 
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/sos6.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/sos6.jpg" alt="" height="410">
                                                  <p style="text-align: center;">
                                                  <b>Screenshot of the SoRT council members with the finalists of SOS</b>
 
@@ -936,7 +937,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <img src="../assets/images/vl1.jpg" alt="" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/vl1.jpg" alt="" class="btn-block">
                                                  <small><b>
                                                  Vidya Lakshmi Portal Webinar Poster
                                                  </b></small>
@@ -963,7 +964,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/vid1.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/vid1.jpg" alt="" height="410">
                                                  <p style="text-align: center;">
                                                  <b>Picture of the host - Ms. Soniya Deshmukh interacting with the guest - Mrs. Deepika Anand and other students.</b>
 
@@ -972,7 +973,7 @@ form:hover .fa {
 
 
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/vid2.jpg"  height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/vid2.jpg"  height="410">
                                                  <p style="text-align: center;">
                                                  <b>Screenshot of the webinar with a few attendees and the honourable guest</b>
 
@@ -1026,7 +1027,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <img src="../assets/images/vac1.png" alt="" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/vac1.png" alt="" class="btn-block">
 
 
                                             </div>
@@ -1046,13 +1047,13 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/vac2.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/vac2.jpg" alt="" height="410">
 
                                             </div>
 
 
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/vac3.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/vac3.jpg" alt="" height="410">
                                                  <p style="text-align: center;">
                                                  <b>SoRT Council Members with Principal Ma’am J.M.Nair </b>
 
@@ -1122,13 +1123,13 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/vis1.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/vis1.jpg" alt="" height="410">
 
                                             </div>
 
 
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/vis2.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/vis2.jpg" alt="" height="410">
 
                                             </div>
 
@@ -1182,7 +1183,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <img src="../assets/images/tad1.jpg" alt="" class="btn-block">
+                                                <img src="${pageContext.request.contextPath}/Images/tad1.jpg" alt="" class="btn-block">
 
 
                                             </div>
@@ -1209,13 +1210,13 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/tad2jpg.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/tad2jpg.jpg" alt="" height="410">
 
                                             </div>
 
 
                                             <div class="col-sm-6">
-                                                <img class="img-fluid" src="../assets/images/tad3.jpg" alt="" height="410">
+                                                <img class="img-fluid" src="${pageContext.request.contextPath}/Images/tad3.jpg" alt="" height="410">
 
                                             </div>
 
@@ -1288,7 +1289,7 @@ form:hover .fa {
 
                                         <div class="row">
                                             <div style="margin-left: auto; margin-right: auto;">
-                                                <img src="../assets/images/tap1.jpg" alt="" class="btn-block img-fluid">
+                                                <img src="${pageContext.request.contextPath}/Images/tap1.jpg" alt="" class="btn-block img-fluid">
 
 
                                             </div>

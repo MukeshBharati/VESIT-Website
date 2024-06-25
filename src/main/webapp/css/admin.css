@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Container Styles */
+.container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Heading Styles */
+h1 {
+  margin-bottom: 20px;
+  font-size: 3em;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Button Container Styles */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 100px;
+}
+
+/* Button Styles */
+.button {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 500px;
+  margin-left: 10%;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: translateY(-5px) scale(1.05);
+}
+
+.button img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.additional-buttons {
+  margin-top: 40px;
+}
+
+.extra-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.extra-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* Background Image Styles */
+body.main-page {
+  background: url('./images/vesit.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Specific Backgrounds */
+body.music {
+  background: url('music-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.cultural {
+  background: url('cultural-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.sports {
+  background: url('sports-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.achievements {
+  background: url('achievements-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

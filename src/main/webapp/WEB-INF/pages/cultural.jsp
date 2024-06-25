@@ -259,6 +259,7 @@ form:hover .fa {
             <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/">Home</a></li>
             <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="/admission/programme">About Us</a></li>
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/storage\Vivekanand Education Socitey.pdf">Contact us</a></li>
+       <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="${pageContext.request.contextPath}/user/adminLoginform">Admin Login</a></li>
         </ul>     
         
        
@@ -377,6 +378,23 @@ height: 100%;
 z-index: 10;
 }
 
+.cultural-but{
+                background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: block;
+            margin: 0 auto;
+            
+        }
+        button:hover {
+            background-color: blue;
+        }
+}
+
 </style>
 <div class="overlaysh" style="display: none;">
 <div id="loading-img"></div>
@@ -426,6 +444,10 @@ z-index: 10;
 <div class="col-md-3 col-lg-2 col-sm-2 py-3">
         <ul class="nav flex-column vesitsidebar" style="height:100%; overflow:hidden;">
      </li>
+     			 <li class="nav-item py-2 my-2">
+                    <a id="id1" class="nav-link" href="${pageContext.request.contextPath}/user/socialresponsibility">Social Responsibility</a>
+                </li>
+     			 
                 <li class="nav-item py-2 my-2">
                     <a id="id2" class="nav-link" href="${pageContext.request.contextPath}/user/Cultural">Cultural</a>
                 </li>
@@ -457,24 +479,35 @@ box-shadow:10px 10px 8px #888888;
                 <img src="https://vesit.ves.ac.in/storage/students_corner/extra_curricular/1576643076Cultural-Council-report-1-300x198.jpg" alt="" class="img-fluid pb-4">
             </div>
             <div class="col-md-9">
-                <p>Prarambh is an event hosted for welcoming the freshers of the undergraduate and MCA courses. Right after the election the preparations for PRARAMBH began. After slogging for over a month, the event was a grand success. The theme of this years Prarambh was “Snapping into Action”.The event started when the auspicious lamp was lit by Prof. Naveeta Kant and Prof.Vivek Umrikar. This event had pre-events too, such as online events and aesthetics events etc. The event was scheduled on 31st August 2018 from 9:00 am to 4:30 pm. It started with the event Treasure Hunt and literature events followed by various performing art events like artists assemble, personality contest, group dance etc. The event ended with a DJ for the freshers of our college.</p>
+                <p>Prarambh is an event hosted for welcoming the freshers of the undergraduate and MCA courses. Right after the election the preparations for PRARAMBH began. After slogging for over a month, the event was a grand success. The theme of this years Prarambh was “Snapping into Action”.
+                The event started when the auspicious lamp was lit by Prof. Naveeta Kant and Prof.Vivek Umrikar. This event had pre-events too, such as online events and aesthetics events etc. The event was scheduled on 31st August 2018 from 9:00 am to 4:30 pm. It started with the event Treasure Hunt and literature events followed by various performing art events like artists assemble, personality contest, group dance etc. The event ended with a DJ for the freshers of our college.</p>
+          
             </div>
-
+  
         </div>
-    </div>
+        <br>
+               <a href="${pageContext.request.contextPath}/user/prarambhreg"><button class="cultural-but">register here</button></a>
+          
+    </div><br>
                         <div class="jumbotron">
         <div class="container">
         <div class="row"><h5 class="mx-auto font-weight-bold font-italic">UDAAN</h5></div>
         <div class="row">
             <div class="col-md-9 text-justify">
-                <p>As a new academic year commences in VESIT, the Cultural Council, comes into existence and kick starts with their very first event, i.e, the Freshers’ Party for the very own first year students. It is named Udaan. The council comes up with creative ideas for the same out of which one theme is selected. The entire event then revolves around this theme including the events, dress codes and the decorations.This event gives the freshers the first opportunity to showcase their talents in college. Potential candidates for other college competitions coming up in the recent future are identified. This is a field for the students to bond with each other and unite together as a class. The first year students prove to be a batch full of talent and enthusiasm and are able to grab all the opportunities given to them with impeccable response and performances.Points are given to students on the basis of their performance in different events and games, and the class with the maximum points wins the “Best Class” award. Other awards like “Mr. and Ms. Freshers”, “Best Dancer”, etc. are given to the most deserving students.</p>
-            </div>
+                <p>As a new academic year commences in VESIT, the Cultural Council, comes into existence and kick starts with their very first event, i.e, the Freshers’ Party for the very own first year students. It is named Udaan. The council comes up with creative ideas for the same out of which one theme is selected. The entire event then revolves around this theme including the events, dress codes and the decorations.This event gives the freshers the first opportunity to showcase their talents in college. Potential candidates for other college competitions coming up in the recent future are identified. This is a field for the students to bond with each other and unite together as a class. The first year students prove to be a batch full of talent and enthusiasm and are able to grab all the opportunities given to them with impeccable response and performances.Points are given to students on the basis of their performance in different events and games, 
+                and the class with the maximum points wins the “Best Class” award. Other awards like “Mr. and Ms. Freshers”, “Best Dancer”, etc. are given to the most deserving students.</p>
+                               </div>
             <div class="col-md-3">
                 <img src="https://vesit.ves.ac.in/storage/students_corner/extra_curricular/1576643203Cultural-Council-report-2-300x200.jpg" alt="" class="img-fluid">
             </div>
         </div>
-    </div>
+    </div> <br>
+                            <a href="${pageContext.request.contextPath}/user/udaanreg"><button class="cultural-but">register here</button></a>
+          
+    
         </div>
+       
+        
                         <div class="container">
         <div class="row"><h5 class="mx-auto  font-weight-bold font-italic">ILLUSION</h5></div>
     <div class="row">
@@ -485,10 +518,15 @@ box-shadow:10px 10px 8px #888888;
                 <p>Illusion the only league format cultural event in VESIT with the objective of promoting intra-college bonding and identifying the most phenomenal talents in the institution. Illusion provides a grand arena for students to compete with each other and unlock individual potential. The Council discovers a unique formula for a fun filled event which demanded excellence from the participants.</p>
 
 <p>The Illusion team extensively scouts the institution for 6 prudent and qualified team leaders who face each other to bring home the championship trophy. The teams work tirelessly to identify the most promising talents from the institution by a series of auditions and interviews, with the team leaders monitoring closely. A fierce auction sees the team leaders lock horns with each other in the battle to find the perfect medley of members for their team. The auction process results in the formation of 42 members in each team leaded by 6 formidable leaders in portfolios of Music, Dance, Drama, Literature, Visual Arts and Aesthetics. After a fierce competition one of the six teams emerges as the winner. With innovative events planned for each portfolio Illusion is certainly an event to remember for years</p>
-            </div>
+                                </div>
 
         </div>
     </div>
+    <br>
+                            <a href="${pageContext.request.contextPath}/user/illusionreg"><button class="cultural-but">register here</button></a>
+           
+           <br>
+    
                         <div class="jumbotron">
         <div class="container">
         <div class="row"><h5 class="mx-auto font-weight-bold font-italic">GANESH MAHAPUJAN</h5></div>
@@ -514,9 +552,13 @@ box-shadow:10px 10px 8px #888888;
 <p>During Utsav, the students who have participated in inter college events are felecitated and given awards. During Utsav the council conducts more than 30 events based on literature, Dance, Music, Drama, Art, Technical knowledge, Speaking skills, etc. UTSAV is one of the most awaited event of the year as it consists of days such as Traditional day, Branch day, Suit day, Chocolate day and Mismatch day.</p>
 
 <p>Utsav is the last cultural event wherein students showcase their talent and collect memories that they will cherish forever</p>
+           
             </div>
-
+          
         </div>
+         <br>
+             <a href="${pageContext.request.contextPath}/user/utsavreg"><button class="cultural-but">register here</button></a>
+           
     </div>
         </div>
     <div id="sports" style="display: none" class="m-3">

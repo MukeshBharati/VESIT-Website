@@ -3,10 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <title>Trial</title>
 </head>
 <body>
-${savedStatus }
+    <!-- Your HTML content -->
+
+    <script type="text/javascript">
+        var statusMessage = "${savedStatus}";
+        if (statusMessage) {
+            alert(statusMessage);
+        }
+    </script>
 </body>
 </html>

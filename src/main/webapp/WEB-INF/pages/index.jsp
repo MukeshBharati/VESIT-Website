@@ -158,6 +158,7 @@
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/">Home</a></li>
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="/admission/programme">About Us</a></li>
                     <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/storage\Vivekanand Education Socitey.pdf">Contact us</a></li>
+                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="${pageContext.request.contextPath}/user/adminLoginform">Admin Login</a></li>
             </ul>     
             
             
@@ -368,7 +369,7 @@
                 </div>
                 
                 <!-- newly edited -->
-                
+              <!--  
                 <div id="toast-container"></div>
                 
                 
@@ -377,7 +378,7 @@
     showToast("${savedStatus}");
 </script>
 
-<script>
+  <script>
 function showToast(message) {
     // Create toast element
     var toast = document.createElement("div");
@@ -411,8 +412,14 @@ function closeToast(element) {
     }, 500);
 }
 
-</script>
+</script> -->
 
+ <script type="text/javascript">
+        var statusMessage = "${savedStatus}";
+        if (statusMessage) {
+            alert(statusMessage);
+        }
+    </script>
 <!-- newly ended -->
                 
     

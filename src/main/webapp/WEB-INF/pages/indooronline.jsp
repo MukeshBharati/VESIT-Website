@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +24,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        
         h1, h2, h3 {
             color: #333;
         }
@@ -31,18 +36,21 @@
 <body>
     <div class="container">
         <h1 class="text-center mb-4">Indoor Online Games Registration</h1>
-        <form action="${pageContext.request.contextPath}/user/inregon" method="post" onsubmit="return validateForm()">
+        <%-- <form action="${pageContext.request.contextPath}/user/outreg" method="post" modelAttribute="user" onsubmit="return validateForm()">
+            <div class="form-group">
+                <input type="hidden" name="outdoor" value="outdoor"/>
+            </div>
             <div class="form-group">
                 <label for="fullName">Full Name</label>
-                <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Enter your full name" required>
+                <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Enter your full name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address" required>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address" required>
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                <input type="tel" name="phone" class="form-control" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
             </div>
             <div class="form-group">
                 <label for="department">Department</label>
@@ -66,6 +74,56 @@
             </div>
             <div class="form-group">
                 <label for="game">Select Game</label>
+                <select class="form-control" id="game" name="game" required>
+                    <option value="">Select a game</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="football">Football</option>
+                    <option value="handball">Handball</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="kabaddi">Kabaddi</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>--%>
+        
+        <form:form action="${pageContext.request.contextPath}/user/inregon" method="post" modelAttribute="user" onsubmit="return validateForm()">
+        <div class="form-group">
+            <form:hidden path="category"/>
+        </div>
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <form:input path="fullName" class="form-control" id="fullName" placeholder="Enter your full name" required="true"/>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <form:input path="email" type="email" class="form-control" id="email" placeholder="Enter your email address" required="true"/>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <form:input path="phone" type="tel" class="form-control" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required="true"/>
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <form:select path="department" class="form-control" id="department" required="true">
+                <form:option value="" label="Select your department"/>
+                <form:option value="Computer Science" label="Computer Science"/>
+                <form:option value="Electrical Engineering" label="Electrical Engineering"/>
+                <form:option value="Mechanical Engineering" label="Mechanical Engineering"/>
+                <form:option value="Civil Engineering" label="Civil Engineering"/>
+                <form:option value="Information Technology" label="Information Technology"/>
+                <form:option value="Electronics Engineering" label="Electronics Engineering"/>
+                <form:option value="Electronics & Telecommunication" label="Electronics & Telecommunication Engineering"/>
+                <form:option value="Artificial Intelligence & Data Science" label="Artificial Intelligence & Data Science Engineering"/>
+                <form:option value="Instrumentation Engineering" label="Instrumentation Engineering"/>
+                <form:option value="Masters of Computer Application" label="M.C.A"/>
+            </form:select>
+        </div>
+        <div class="form-group">
+            <label for="studClass">Class</label>
+            <form:input path="studClass" class="form-control" id="class" required="true"/>
+        </div>
+        <div class="form-group">
+                <label for="game">Select Game</label>
                 <select class="form-control" name="game" id="game" required>
                     <option value="">Select a game</option>
                     <option value="valorent">Valorent</option>
@@ -74,8 +132,8 @@
                     <option value="fortnite">Fortnite</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form:form>
     </div>
 
     <script>
@@ -125,4 +183,4 @@
     </script>
 </body>
 </html>
-
+      

@@ -259,6 +259,7 @@ form:hover .fa {
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/">Home</a></li>
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="/admission/programme">About Us</a></li>
                     <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/storage\Vivekanand Education Socitey.pdf">Contact us</a></li>
+            <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="${pageContext.request.contextPath}/user/adminLoginform">Admin Login</a></li>
             </ul>     
             
         
@@ -471,7 +472,7 @@ color: #204184;
 
                     <div class="row">
                         <div class="col-sm-2">
-                            <img src="../assets/images/vpc.jpg" alt="" class="btn-block">
+                            <img src="${pageContext.request.contextPath}/Images/vpc.jpg" alt="" class="btn-block">
                         </div>
 
                         <div class="col-sm-10">

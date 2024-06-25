@@ -259,6 +259,7 @@ form:hover .fa {
     <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/">Home</a></li>
     <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="/admission/programme">About Us</a></li>
         <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/storage\Vivekanand Education Socitey.pdf">Contact us</a></li>
+<li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="${pageContext.request.contextPath}/user/adminLoginform">Admin Login</a></li>
 </ul>     
 
 
@@ -640,7 +641,12 @@ z-index: 10;
         </div>
                 </div>
                 
-              
+    <script type="text/javascript">
+        var statusMessage = "${savedStatus}";
+        if (statusMessage) {
+            alert(statusMessage);
+        }
+    </script>
 
 
 

@@ -258,6 +258,7 @@ form:hover .fa {
             <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/">Home</a></li>
             <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="/admission/programme">About Us</a></li>
                 <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="https://vesit.ves.ac.in/storage\Vivekanand Education Socitey.pdf">Contact us</a></li>
+        <li class="nav-link m-auto"><a class="p-2 bg-light text-primary fw-bold" href="${pageContext.request.contextPath}/user/adminLoginform">Admin Login</a></li>
         </ul>     
         
        
@@ -330,10 +331,12 @@ font-weight: bold;
         border-radius: 5px;
         transition: background-color 0.3s;
         font-size: 18px;
+        margin: auto;
     }
 
     .register-button:hover {
         background-color: #ff8533;
+        
     }
 
     /* Info section styles */
@@ -437,7 +440,7 @@ font-weight: bold;
 
                     <div class="row">
                         <div class="col-sm-2">
-                            <img src="../assets/images/music.jpg" alt="" class="btn-block">
+                            <img src="${pageContext.request.contextPath}/Images/music.jpg" alt="" class="btn-block">
                         </div>
 
                         <div class="col-sm-10">
@@ -478,9 +481,9 @@ font-weight: bold;
                                 judged by professional music maestros and faculty members.</p>
                         </div>
                         <div class="col-sm-2">
-                            <img src="../assets/images/piano.png" alt="" class="btn-block">
-                            <img src="../assets/images/instrument1.jpg" alt="" class="btn-block">
-                            <img src="../assets/images/instrument2.png" alt="" class="btn-block">
+                            <img src="${pageContext.request.contextPath}/Images/piano.png" alt="" class="btn-block">
+                            <img src="${pageContext.request.contextPath}/Images/instrument1.jpg" alt="" class="btn-block">
+                            <img src="${pageContext.request.contextPath}/Images/instrument2.png" alt="" class="btn-block">
                         </div>
                     </div>
 
@@ -496,17 +499,16 @@ font-weight: bold;
                             <h2>Experience the Magic of Music!</h2>
                             <p>Join us for the most awaited music festival of the year!</p>
                             <p>Date: August 20th - August 22nd, 2024</p>
-                            <p>Location: VRSIT College Campus</p>
+                            <p>Location: VESIT College Campus</p>
                             <p>Featuring:</p>
                             <ul>
-                                <li>Top Artists from around the globe</li>
+                                <li>Top Artists from our college</li>
                                 <li>Live Performances</li>
-                                <li>Food Stalls with Delicious Cuisine</li>
                                 <li>Interactive Workshops</li>
                                 <li>And much more!</li>
                             </ul>
                             <p>Don't miss out on this <span class="highlight">unforgettable</span> experience!</p>
-                            <a href="#" class="register-button">Register Now</a>
+                            <a href="${pageContext.request.contextPath}/user/blissreg" class="register-button">Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -514,23 +516,23 @@ font-weight: bold;
                 <div class="tab-pane fade" id="octaves" role="tabpanel" aria-labelledby="octaves-tab">
                     <div class="container">
                         <div class="header">
-                         <h1>Welcome to Octaves Film Festival</h1>
+                         <h1>Welcome to Octaves Music Festival</h1>
                             </div>
                             <div class="details">
-                                <h2>Experience the Magic of Cinema!</h2>
+                                <h2>Experience the Magic of music</h2>
                                 <p>Join us for the most exciting film festival of the year!</p>
                                 <p>Date: November 10th - November 15th, 2024</p>
-                                <p>Location: City Theater, Downtown</p>
+                                <p>Location: amphi-Theater, VESIT</p>
                                 <p>Highlights:</p>
                                 <ul>
-                                    <li>Premiere Screenings of Award-Winning Films</li>
-                                    <li>Q&A Sessions with Filmmakers</li>
+                       
+                                    <li>Q&A Sessions with our students</li>
                                     <li>Red Carpet Events</li>
                                     <li>Interactive Workshops and Panels</li>
                                     <li>And much more!</li>
                                 </ul>
                                 <p>Don't miss out on this <span class="highlight">spectacular</span> cinematic experience!</p>
-                                <a href="#" class="register-button">Register Now</a>
+                                <a href="${pageContext.request.contextPath}/user/octavesreg" class="register-button">Register Now</a>
                             </div>
                         </div>
                 </div>
